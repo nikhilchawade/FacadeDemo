@@ -13,6 +13,9 @@
 		8AB480421E0A4D3100B78897 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB480401E0A4D3100B78897 /* Main.storyboard */; };
 		8AB480441E0A4D3100B78897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB480431E0A4D3100B78897 /* Assets.xcassets */; };
 		8AB480471E0A4D3100B78897 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB480451E0A4D3100B78897 /* LaunchScreen.storyboard */; };
+		8AB480511E0A4FE900B78897 /* BaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB480501E0A4FE900B78897 /* BaseClass.m */; };
+		8AB480541E0A500100B78897 /* ClientClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB480531E0A500100B78897 /* ClientClass.m */; };
+		8AB480571E0A501700B78897 /* ManagerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB480561E0A501700B78897 /* ManagerClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		8AB480431E0A4D3100B78897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AB480461E0A4D3100B78897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AB480481E0A4D3100B78897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AB4804F1E0A4FE900B78897 /* BaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseClass.h; sourceTree = "<group>"; };
+		8AB480501E0A4FE900B78897 /* BaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseClass.m; sourceTree = "<group>"; };
+		8AB480521E0A500100B78897 /* ClientClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientClass.h; sourceTree = "<group>"; };
+		8AB480531E0A500100B78897 /* ClientClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientClass.m; sourceTree = "<group>"; };
+		8AB480551E0A501700B78897 /* ManagerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerClass.h; sourceTree = "<group>"; };
+		8AB480561E0A501700B78897 /* ManagerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +67,12 @@
 		8AB480361E0A4D3000B78897 /* FacadeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8AB4804E1E0A4FC100B78897 /* View Controller */,
+				8AB480581E0A501C00B78897 /* ClientClass */,
+				8AB480591E0A503700B78897 /* ManagerClass */,
+				8AB4805A1E0A507800B78897 /* BaseClass */,
 				8AB4803A1E0A4D3000B78897 /* AppDelegate.h */,
 				8AB4803B1E0A4D3100B78897 /* AppDelegate.m */,
-				8AB4803D1E0A4D3100B78897 /* ViewController.h */,
-				8AB4803E1E0A4D3100B78897 /* ViewController.m */,
 				8AB480401E0A4D3100B78897 /* Main.storyboard */,
 				8AB480431E0A4D3100B78897 /* Assets.xcassets */,
 				8AB480451E0A4D3100B78897 /* LaunchScreen.storyboard */,
@@ -77,6 +88,42 @@
 				8AB480381E0A4D3000B78897 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8AB4804E1E0A4FC100B78897 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8AB4803D1E0A4D3100B78897 /* ViewController.h */,
+				8AB4803E1E0A4D3100B78897 /* ViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		8AB480581E0A501C00B78897 /* ClientClass */ = {
+			isa = PBXGroup;
+			children = (
+				8AB480521E0A500100B78897 /* ClientClass.h */,
+				8AB480531E0A500100B78897 /* ClientClass.m */,
+			);
+			name = ClientClass;
+			sourceTree = "<group>";
+		};
+		8AB480591E0A503700B78897 /* ManagerClass */ = {
+			isa = PBXGroup;
+			children = (
+				8AB480551E0A501700B78897 /* ManagerClass.h */,
+				8AB480561E0A501700B78897 /* ManagerClass.m */,
+			);
+			name = ManagerClass;
+			sourceTree = "<group>";
+		};
+		8AB4805A1E0A507800B78897 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				8AB4804F1E0A4FE900B78897 /* BaseClass.h */,
+				8AB480501E0A4FE900B78897 /* BaseClass.m */,
+			);
+			name = BaseClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +200,10 @@
 			files = (
 				8AB4803F1E0A4D3100B78897 /* ViewController.m in Sources */,
 				8AB4803C1E0A4D3100B78897 /* AppDelegate.m in Sources */,
+				8AB480541E0A500100B78897 /* ClientClass.m in Sources */,
 				8AB480391E0A4D3000B78897 /* main.m in Sources */,
+				8AB480571E0A501700B78897 /* ManagerClass.m in Sources */,
+				8AB480511E0A4FE900B78897 /* BaseClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
